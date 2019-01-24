@@ -11,7 +11,7 @@ import java.util.HashMap;
  */
 public class JobData {
 
-    private ArrayList<Job> jobs = new ArrayList<>();
+    private static ArrayList<Job> jobs = new ArrayList<>();
     private static JobData instance;
 
     private JobFieldData<Employer> employers = new JobFieldData<>();
@@ -82,8 +82,7 @@ public class JobData {
     }
 
 
-    public void add(Job job) {
-        jobs.add(job);
+    public static void add(Job job) { jobs.add(job);
     }
 
 
